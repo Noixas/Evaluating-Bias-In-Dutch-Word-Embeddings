@@ -1,0 +1,1 @@
+Code from [Clips repo](https://github.com/clips/dutchembeddings/tree/master) to test models performance.
