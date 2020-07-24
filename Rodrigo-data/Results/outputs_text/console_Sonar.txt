@@ -1,0 +1,108 @@
+----------------Processing new model!------------------------------------------------------
+NAME: sonar-160
+100%|██████████████████████| 50000/50000 [00:00<00:00, 344148.02it/s]
+size of vocabulary: 49505
+Report bias by projection: 0.031208526973765947
+PROJECTION STEP: SONAR-160
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 1.0
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 1.0
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 1.0
+DEBIASED: Neighborhood Metric (closer to .5 is better) 1.0
+Cluster metric results: [orig,debiased]  [1.0, 1.0]
+WEAT ORIGINAL STEP: SONAR-160
+WEAT DEBIASED STEP: SONAR-160
+LATEX:
+(LONG WAIT)DOWNSTREAM STEP: SONAR-160
+Downstream biased: 0.40838126540673786
+Downstream debiased: 0.3944124897288414
+END of model: SONAR-160
+RESULTS WEAT
+        Model        XYAB  Effect size d  Significance p WEAT file
+0   sonar-160  flowers-in       1.448992          0.0002    Weat-1
+1   sonar-160  instrument       1.579580          0.0002    Weat-2
+2   sonar-160  european_a       0.001080          0.3040    Weat-3
+3   sonar-160  male_names       0.725754          0.0842    Weat-6
+4   sonar-160  math-arts-       1.451309          0.0006    Weat-7
+5   sonar-160  science-ar       1.180736          0.0046    Weat-8
+6   sonar-160  mental_dis       1.287356          0.0120    Weat-9
+7   sonar-160  young_peop       0.069756          0.4586   Weat-10
+8   sonar-160  male_names       0.952219          0.0100   Weat-11
+9   sonar-160  career-fam       1.436066          0.0016   Weat-12
+10  sonar-160  male_terms       0.528292          0.1046   Weat-13
+11  sonar-160  career-fam       1.315211          0.0028   Weat-14
+12  sonar-160  math-arts-       1.242842          0.0036   Weat-15
+13  sonar-160  science-ar       1.198990          0.0046   Weat-16
+ACTUALLY END................................................................................
+----------------Processing new model!------------------------------------------------------
+NAME: sonar-320
+100%|██████████████████████| 50000/50000 [00:00<00:00, 343860.80it/s]
+size of vocabulary: 49505
+Report bias by projection: 0.028682630164088084
+PROJECTION STEP: SONAR-320
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 0.998
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 0.998
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 0.998
+DEBIASED: Neighborhood Metric (closer to .5 is better) 0.998
+Cluster metric results: [orig,debiased]  [0.998, 0.998]
+WEAT ORIGINAL STEP: SONAR-320
+WEAT DEBIASED STEP: SONAR-320
+LATEX:
+(LONG WAIT)DOWNSTREAM STEP: SONAR-320
+Downstream biased: 0.4294371405094495
+Downstream debiased: 0.4218364831552999
+END of model: SONAR-320
+RESULTS WEAT
+        Model        XYAB  Effect size d  Significance p WEAT file
+0   sonar-320  flowers-in       1.412814          0.0002    Weat-1
+1   sonar-320  instrument       1.572063          0.0002    Weat-2
+2   sonar-320  european_a      -0.490320          0.8802    Weat-3
+3   sonar-320  male_names       0.528334          0.1582    Weat-6
+4   sonar-320  math-arts-       1.171619          0.0118    Weat-7
+5   sonar-320  science-ar       0.994788          0.0212    Weat-8
+6   sonar-320  mental_dis       1.134103          0.0224    Weat-9
+7   sonar-320  young_peop      -0.020594          0.5266   Weat-10
+8   sonar-320  male_names       0.726953          0.0402   Weat-11
+9   sonar-320  career-fam       1.275882          0.0054   Weat-12
+10  sonar-320  male_terms       0.445024          0.1382   Weat-13
+11  sonar-320  career-fam       1.254954          0.0058   Weat-14
+12  sonar-320  math-arts-       1.092284          0.0132   Weat-15
+13  sonar-320  science-ar       1.150447          0.0088   Weat-16
+ACTUALLY END................................................................................
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    sonar-160 & 0.40838126540673786 & 0.3944124897288414 \\
+ \hline
+ sonar-320 & 0.4294371405094495 & 0.4218364831552999 \\
+ \hline
+  \end{tabular}
+     \caption{Downstream task results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table} 
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    sonar-160 & 1.0 & 1.0 \\
+ \hline
+ sonar-320 & 0.998 & 0.998 \\
+ \hline
+  \end{tabular}
+     \caption{Cluster test results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table} 

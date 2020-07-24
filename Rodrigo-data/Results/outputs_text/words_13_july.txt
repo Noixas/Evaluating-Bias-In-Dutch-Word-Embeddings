@@ -1,0 +1,227 @@
+man and vrouw as projection bias
+100%|██████████| 50000/50000 [00:00<00:00, 557341.11it/s]----------------Processing new model!------------------------------------------------------
+NAME: nl_fasttext
+size of vocabulary: 26171
+
+Report bias by projection: 0.1154301415566508
+PROJECTION STEP: NL_FASTTEXT
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 0.576
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 0.576
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 0.605
+DEBIASED: Neighborhood Metric (closer to .5 is better) 0.605
+DOWNSTREAM STEP: NL_FASTTEXT
+WEAT ORIGINAL STEP: NL_FASTTEXT
+WEAT DEBIASED STEP: NL_FASTTEXT
+100%|██████████| 50000/50000 [00:00<00:00, 308328.98it/s]\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline
+        WEAT list &  Effect size d &  Significance p \\
+       \hline
+    Weat-1 & $1.3757  \rightarrow 1.4088$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-2 & $1.5928  \rightarrow 1.5933$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-3 & $-0.0069  \rightarrow \textbf{-0.0411}$ & $0.4934 \rightarrow 0.4302$ \\
+ \hline
+ Weat-6 & $1.5342  \rightarrow 1.5713$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-7 & $1.4837  \rightarrow \textbf{0.8614}$ & $0.0006 \rightarrow \textbf{0.0492}$ \\
+ \hline
+ Weat-8 & $1.1467  \rightarrow \textbf{0.6946}$ & $0.0096 \rightarrow \textbf{0.0988}$ \\
+ \hline
+ Weat-9 & $0.5071  \rightarrow \textbf{0.4311}$ & $0.1322 \rightarrow \textbf{0.1432}$ \\
+ \hline
+ Weat-10 & $0.5211  \rightarrow 0.5332$ & $0.1682 \rightarrow 0.1596$ \\
+ \hline
+ Weat-11 & $0.8296  \rightarrow 0.8856$ & $0.0222 \rightarrow 0.0132$ \\
+ \hline
+ Weat-12 & $0.8907  \rightarrow 0.9025$ & $0.0444 \rightarrow 0.0438$ \\
+ \hline
+ Weat-13 & $0.2714  \rightarrow \textbf{0.0783}$ & $0.25 \rightarrow \textbf{0.3578}$ \\
+ \hline
+ Weat-14 & $0.6828  \rightarrow \textbf{0.1328}$ & $0.1078 \rightarrow \textbf{0.414}$ \\
+ \hline
+ Weat-15 & $0.9186  \rightarrow \textbf{0.8853}$ & $0.0342 \rightarrow \textbf{0.0382}$ \\
+ \hline
+ Weat-16 & $1.1226  \rightarrow \textbf{0.976}$ & $0.01 \rightarrow \textbf{0.0236}$ \\
+ \hline
+  \end{tabular}
+     \caption{WEAT results, arrow indicates before to after mitigating bias}
+
+\label{tab2}
+\end{center}
+\end{table} 
+Cluster metric results: [orig,debiased]  [0.576, 0.605]
+Downstream biased: 0.6744525547445256
+Downstream debiased: 0.6372262773722628
+END of model nl_fasttext
+          Model        XYAB  Effect size d  Significance p WEAT file
+0   nl_fasttext  flowers-in       1.375702          0.0002    Weat-1
+1   nl_fasttext  instrument       1.592844          0.0002    Weat-2
+2   nl_fasttext  european_a      -0.006947          0.4934    Weat-3
+3   nl_fasttext  male_names       1.534239          0.0002    Weat-6
+4   nl_fasttext  math-arts-       1.483715          0.0006    Weat-7
+5   nl_fasttext  science-ar       1.146676          0.0096    Weat-8
+6   nl_fasttext  mental_dis       0.507120          0.1322    Weat-9
+7   nl_fasttext  young_peop       0.521085          0.1682   Weat-10
+8   nl_fasttext  male_names       0.829650          0.0222   Weat-11
+9   nl_fasttext  career-fam       0.890744          0.0444   Weat-12
+10  nl_fasttext  male_terms       0.271428          0.2500   Weat-13
+11  nl_fasttext  career-fam       0.682811          0.1078   Weat-14
+12  nl_fasttext  math-arts-       0.918608          0.0342   Weat-15
+13  nl_fasttext  science-ar       1.122639          0.0100   Weat-16
+----------------Processing new model!------------------------------------------------------
+NAME: nl_nlpl
+size of vocabulary: 43768
+
+Report bias by projection: 0.6702604322506547
+PROJECTION STEP: NL_NLPL
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 0.552
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 0.552
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 0.012
+DEBIASED: Neighborhood Metric (closer to .5 is better) 0.988
+DOWNSTREAM STEP: NL_NLPL
+WEAT ORIGINAL STEP: NL_NLPL
+WEAT DEBIASED STEP: NL_NLPL
+100%|██████████| 50000/50000 [00:00<00:00, 293217.34it/s]\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline
+        WEAT list &  Effect size d &  Significance p \\
+       \hline
+    Weat-1 & $1.6244  \rightarrow \textbf{1.547}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-2 & $1.5379  \rightarrow \textbf{1.4701}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-3 & $0.4934  \rightarrow \textbf{0.3095}$ & $0.0242 \rightarrow \textbf{0.1294}$ \\
+ \hline
+ Weat-6 & $1.7475  \rightarrow \textbf{1.6917}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-7 & $1.4434  \rightarrow \textbf{1.1204}$ & $0.001 \rightarrow \textbf{0.009}$ \\
+ \hline
+ Weat-8 & $0.7656  \rightarrow \textbf{0.7064}$ & $0.0694 \rightarrow \textbf{0.0792}$ \\
+ \hline
+ Weat-9 & $1.3683  \rightarrow \textbf{1.3649}$ & $0.0092 \rightarrow 0.0066$ \\
+ \hline
+ Weat-10 & $0.3328  \rightarrow \textbf{0.08}$ & $0.2802 \rightarrow \textbf{0.4484}$ \\
+ \hline
+ Weat-11 & $1.4817  \rightarrow \textbf{1.4204}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-12 & $1.7416  \rightarrow 1.8171$ & $0.0006 \rightarrow 0.0002$ \\
+ \hline
+ Weat-13 & $0.5369  \rightarrow \textbf{0.2783}$ & $0.1206 \rightarrow \textbf{0.2462}$ \\
+ \hline
+ Weat-14 & $1.1383  \rightarrow \textbf{0.9887}$ & $0.0134 \rightarrow \textbf{0.0266}$ \\
+ \hline
+ Weat-15 & $1.4156  \rightarrow \textbf{1.1554}$ & $0.0006 \rightarrow \textbf{0.0092}$ \\
+ \hline
+ Weat-16 & $1.3166  \rightarrow \textbf{1.2944}$ & $0.0034 \rightarrow 0.0028$ \\
+ \hline
+  \end{tabular}
+     \caption{WEAT results, arrow indicates before to after mitigating bias}
+
+\label{tab2}
+\end{center}
+\end{table} 
+Cluster metric results: [orig,debiased]  [0.552, 0.012]
+Downstream biased: 0.43036946812829885
+Downstream debiased: 0.4269183922046285
+END of model nl_nlpl
+      Model        XYAB  Effect size d  Significance p WEAT file
+0   nl_nlpl  flowers-in       1.624362          0.0002    Weat-1
+1   nl_nlpl  instrument       1.537925          0.0002    Weat-2
+2   nl_nlpl  european_a       0.493434          0.0242    Weat-3
+3   nl_nlpl  male_names       1.747549          0.0002    Weat-6
+4   nl_nlpl  math-arts-       1.443442          0.0010    Weat-7
+5   nl_nlpl  science-ar       0.765628          0.0694    Weat-8
+6   nl_nlpl  mental_dis       1.368313          0.0092    Weat-9
+7   nl_nlpl  young_peop       0.332843          0.2802   Weat-10
+8   nl_nlpl  male_names       1.481675          0.0002   Weat-11
+9   nl_nlpl  career-fam       1.741585          0.0006   Weat-12
+10  nl_nlpl  male_terms       0.536939          0.1206   Weat-13
+11  nl_nlpl  career-fam       1.138262          0.0134   Weat-14
+12  nl_nlpl  math-arts-       1.415558          0.0006   Weat-15
+13  nl_nlpl  science-ar       1.316624          0.0034   Weat-16
+----------------Processing new model!------------------------------------------------------
+NAME: nl_clips_cow
+size of vocabulary: 48834
+
+Report bias by projection: 0.04150913317099714
+PROJECTION STEP: NL_CLIPS_COW
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 1.0
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 1.0
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 0.999
+DEBIASED: Neighborhood Metric (closer to .5 is better) 0.999
+DOWNSTREAM STEP: NL_CLIPS_COW
+WEAT ORIGINAL STEP: NL_CLIPS_COW
+WEAT DEBIASED STEP: NL_CLIPS_COW
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline
+        WEAT list &  Effect size d &  Significance p \\
+       \hline
+    Weat-1 & $1.5799  \rightarrow \textbf{1.5541}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-2 & $1.6126  \rightarrow \textbf{1.5978}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-3 & $0.7215  \rightarrow \textbf{0.7116}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-6 & $1.866  \rightarrow \textbf{1.8097}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-7 & $1.7588  \rightarrow \textbf{0.6817}$ & $0.0002 \rightarrow \textbf{0.106}$ \\
+ \hline
+ Weat-8 & $1.3386  \rightarrow \textbf{0.3065}$ & $0.0034 \rightarrow \textbf{0.2802}$ \\
+ \hline
+ Weat-9 & $1.5522  \rightarrow \textbf{1.5471}$ & $0.0068 \rightarrow \textbf{0.008}$ \\
+ \hline
+ Weat-10 & $0.2396  \rightarrow \textbf{0.1631}$ & $0.3204 \rightarrow \textbf{0.3838}$ \\
+ \hline
+ Weat-11 & $1.4327  \rightarrow \textbf{1.1614}$ & $0.0002 \rightarrow \textbf{0.0004}$ \\
+ \hline
+ Weat-12 & $1.5599  \rightarrow \textbf{1.5395}$ & $0.0002 \rightarrow 0.0002$ \\
+ \hline
+ Weat-13 & $0.4052  \rightarrow \textbf{-0.0419}$ & $0.184 \rightarrow \textbf{0.4892}$ \\
+ \hline
+ Weat-14 & $1.417  \rightarrow \textbf{-0.2942}$ & $0.0018 \rightarrow \textbf{0.30920000000000003}$ \\
+ \hline
+ Weat-15 & $1.4198  \rightarrow \textbf{0.6351}$ & $0.0006 \rightarrow \textbf{0.1208}$ \\
+ \hline
+ Weat-16 & $1.3375  \rightarrow \textbf{0.7415}$ & $0.0034 \rightarrow \textbf{0.0748}$ \\
+ \hline
+  \end{tabular}
+     \caption{WEAT results, arrow indicates before to after mitigating bias}
+
+\label{tab2}
+\end{center}
+\end{table} 
+Cluster metric results: [orig,debiased]  [1.0, 0.999]
+Downstream biased: 0.5131982811540823
+Downstream debiased: 0.5086965418457131
+END of model nl_clips_cow
+           Model        XYAB  Effect size d  Significance p WEAT file
+0   nl_clips_cow  flowers-in       1.579854          0.0002    Weat-1
+1   nl_clips_cow  instrument       1.612641          0.0002    Weat-2
+2   nl_clips_cow  european_a       0.721517          0.0002    Weat-3
+3   nl_clips_cow  male_names       1.865969          0.0002    Weat-6
+4   nl_clips_cow  math-arts-       1.758839          0.0002    Weat-7
+5   nl_clips_cow  science-ar       1.338577          0.0034    Weat-8
+6   nl_clips_cow  mental_dis       1.552193          0.0068    Weat-9
+7   nl_clips_cow  young_peop       0.239588          0.3204   Weat-10
+8   nl_clips_cow  male_names       1.432716          0.0002   Weat-11
+9   nl_clips_cow  career-fam       1.559870          0.0002   Weat-12
+10  nl_clips_cow  male_terms       0.405160          0.1840   Weat-13
+11  nl_clips_cow  career-fam       1.417003          0.0018   Weat-14
+12  nl_clips_cow  math-arts-       1.419753          0.0006   Weat-15
+13  nl_clips_cow  science-ar       1.337512          0.0034   Weat-16
+{'nl_fasttext': [0.576, 0.605], 'nl_nlpl': [0.552, 0.012], 'nl_clips_cow': [1.0, 0.999]}

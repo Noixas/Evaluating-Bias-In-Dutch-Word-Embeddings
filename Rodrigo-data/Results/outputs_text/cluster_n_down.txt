@@ -1,0 +1,38 @@
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    nl_fasttext & 0.6744525547445256 & 0.6372262773722628 \\
+ \hline
+ nl_nlpl & 0.43036946812829885 & 0.4269183922046285 \\
+ \hline
+ nl_clips_cow & 0.5131982811540823 & 0.5086965418457131 \\
+ \hline
+  \end{tabular}
+     \caption{Downstream task results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table} 
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    nl_fasttext & 0.576 & 0.605 \\
+ \hline
+ nl_nlpl & 0.552 & 0.012 \\
+ \hline
+ nl_clips_cow & 1.0 & 0.999 \\
+ \hline
+  \end{tabular}
+     \caption{Cluster test results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table}

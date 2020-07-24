@@ -1,0 +1,108 @@
+----------------Processing new model!------------------------------------------------------
+NAME: cow-320
+100%|██████████████████████| 50000/50000 [00:00<00:00, 248238.60it/s]
+size of vocabulary: 48834
+Report bias by projection: 0.041509133170997005
+PROJECTION STEP: COW-320
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 1.0
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 1.0
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 1.0
+DEBIASED: Neighborhood Metric (closer to .5 is better) 1.0
+Cluster metric results: [orig,debiased]  [1.0, 1.0]
+WEAT ORIGINAL STEP: COW-320
+WEAT DEBIASED STEP: COW-320
+LATEX:
+(LONG WAIT)DOWNSTREAM STEP: COW-320
+Downstream biased: 0.5131982811540823
+Downstream debiased: 0.5122774708410067
+END of model: COW-320
+RESULTS WEAT
+      Model        XYAB  Effect size d  Significance p WEAT file
+0   cow-320  flowers-in       1.579854          0.0002    Weat-1
+1   cow-320  instrument       1.612641          0.0002    Weat-2
+2   cow-320  european_a       0.721517          0.0004    Weat-3
+3   cow-320  male_names       1.865969          0.0002    Weat-6
+4   cow-320  math-arts-       1.758839          0.0002    Weat-7
+5   cow-320  science-ar       1.338577          0.0024    Weat-8
+6   cow-320  mental_dis       1.552193          0.0064    Weat-9
+7   cow-320  young_peop       0.239588          0.3356   Weat-10
+8   cow-320  male_names       1.432716          0.0002   Weat-11
+9   cow-320  career-fam       1.559870          0.0004   Weat-12
+10  cow-320  male_terms       0.405160          0.1836   Weat-13
+11  cow-320  career-fam       1.417003          0.0020   Weat-14
+12  cow-320  math-arts-       1.419753          0.0018   Weat-15
+13  cow-320  science-ar       1.337512          0.0022   Weat-16
+ACTUALLY END................................................................................
+----------------Processing new model!------------------------------------------------------
+NAME: cow-big
+100%|██████████████████████| 50000/50000 [00:00<00:00, 351006.58it/s]
+size of vocabulary: 48834
+Report bias by projection: 0.03891669255864799
+PROJECTION STEP: COW-BIG
+ORIGINAL: Model Results cluster_visualize
+ORIGINAL: Precision 0.999
+ORIGINAL: Neighborhood Metric (closer to .5 is better) 0.999
+DEBIASED: Model Results cluster_visualize
+DEBIASED: Precision 0.999
+DEBIASED: Neighborhood Metric (closer to .5 is better) 0.999
+Cluster metric results: [orig,debiased]  [0.999, 0.999]
+WEAT ORIGINAL STEP: COW-BIG
+WEAT DEBIASED STEP: COW-BIG
+LATEX:
+(LONG WAIT)DOWNSTREAM STEP: COW-BIG
+Downstream biased: 0.515756087579292
+Downstream debiased: 0.5180069572334766
+END of model: COW-BIG
+RESULTS WEAT
+      Model        XYAB  Effect size d  Significance p WEAT file
+0   cow-big  flowers-in       1.545508          0.0002    Weat-1
+1   cow-big  instrument       1.548872          0.0002    Weat-2
+2   cow-big  european_a       0.656499          0.0044    Weat-3
+3   cow-big  male_names       1.770873          0.0002    Weat-6
+4   cow-big  math-arts-       1.712939          0.0002    Weat-7
+5   cow-big  science-ar       1.424569          0.0004    Weat-8
+6   cow-big  mental_dis       1.387493          0.0168    Weat-9
+7   cow-big  young_peop       0.691423          0.1000   Weat-10
+8   cow-big  male_names       1.398706          0.0002   Weat-11
+9   cow-big  career-fam       1.525922          0.0010   Weat-12
+10  cow-big  male_terms       0.378339          0.2008   Weat-13
+11  cow-big  career-fam       1.333808          0.0050   Weat-14
+12  cow-big  math-arts-       1.667678          0.0002   Weat-15
+13  cow-big  science-ar       1.460019          0.0016   Weat-16
+ACTUALLY END................................................................................
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    cow-320 & 0.5131982811540823 & 0.5122774708410067 \\
+ \hline
+ cow-big & 0.515756087579292 & 0.5180069572334766 \\
+ \hline
+  \end{tabular}
+     \caption{Downstream task results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table} 
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline 
+        Model &  Original &  Debiased \\
+       \hline
+    cow-320 & 1.0 & 1.0 \\
+ \hline
+ cow-big & 0.999 & 0.999 \\
+ \hline
+  \end{tabular}
+     \caption{Cluster test results, before and after debias step}
+
+\label{tab2}
+\end{center}
+\end{table} 

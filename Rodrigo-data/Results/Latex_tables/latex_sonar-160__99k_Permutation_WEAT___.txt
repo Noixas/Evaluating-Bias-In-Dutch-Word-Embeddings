@@ -1,0 +1,41 @@
+\begin{table}[htb!]
+    \begin{center}
+
+    \begin{tabular}{|c|c|c|}
+    \hline
+        WEAT list &  Effect size d &  Significance p \\
+       \hline
+    Weat-1 & $1.449  \rightarrow \textbf{1.4267}$ & $0.0 \rightarrow 0.0$ \\
+ \hline
+ Weat-2 & $1.5796  \rightarrow \textbf{1.5641}$ & $0.0 \rightarrow 0.0$ \\
+ \hline
+ Weat-3 & $0.0011  \rightarrow \textbf{-0.1089}$ & $0.298 \rightarrow \textbf{0.4561}$ \\
+ \hline
+ Weat-6 & $0.7258  \rightarrow \textbf{0.5779}$ & $0.0838 \rightarrow \textbf{0.1392}$ \\
+ \hline
+ Weat-7 & $1.4513  \rightarrow \textbf{0.4098}$ & $0.0005 \rightarrow \textbf{0.2145}$ \\
+ \hline
+ Weat-8 & $1.1807  \rightarrow \textbf{0.2707}$ & $0.0073 \rightarrow \textbf{0.3214}$ \\
+ \hline
+ Weat-9 & $1.2874  \rightarrow 1.2878$ & $0.0134 \rightarrow \textbf{0.0135}$ \\
+ \hline
+ Weat-10 & $0.0698  \rightarrow \textbf{-0.1099}$ & $0.449 \rightarrow 0.4195$ \\
+ \hline
+ Weat-11 & $0.9522  \rightarrow \textbf{0.8928}$ & $0.0092 \rightarrow \textbf{0.0142}$ \\
+ \hline
+ Weat-12 & $1.4361  \rightarrow \textbf{1.4154}$ & $0.0013 \rightarrow \textbf{0.0018}$ \\
+ \hline
+ Weat-13 & $0.5283  \rightarrow \textbf{0.4011}$ & $0.1061 \rightarrow \textbf{0.1592}$ \\
+ \hline
+ Weat-14 & $1.3152  \rightarrow 1.3968$ & $0.0024 \rightarrow 0.0018$ \\
+ \hline
+ Weat-15 & $1.2428  \rightarrow \textbf{1.1066}$ & $0.0042 \rightarrow \textbf{0.0149}$ \\
+ \hline
+ Weat-16 & $1.199  \rightarrow 1.3016$ & $0.0051 \rightarrow 0.0037$ \\
+ \hline
+  \end{tabular}
+     \caption{WEAT results, arrow indicates before to after mitigating bias}
+
+\label{tab2}
+\end{center}
+\end{table} 
